@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+
+:root {
+  /* ─── Telkom University Brand Colors ─── */
+  --telkom-red: #CC0000;
+  --telkom-red-dark: #A30000;
+  --telkom-red-light: #FF1A1A;
+  --telkom-red-muted: #FFF0F0;
+
+  /* ─── Neutrals ─── */
+  --background: #F8F9FA;
+  --surface: #FFFFFF;
+  --foreground: #1A1A2E;
+  --foreground-muted: #6B7280;
+  --border: #E5E7EB;
+  --border-light: #F3F4F6;
+
+  /* ─── Status Colors ─── */
+  --success: #16A34A;
+  --warning: #D97706;
+  --info: #2563EB;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Scrollbar Styling ─── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--border-light);
+}
+::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
+}
+
